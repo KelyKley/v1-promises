@@ -41,7 +41,7 @@ header {
 
 h1,
 p,
-form button {
+button {
   color: white;  
 }
 h1 {
@@ -67,7 +67,7 @@ form {
   display: flex;
   border-radius: .2em;
 }
-form button {
+button {
   padding: 0 1em;
   font-size: 1em;
   background: #FDE880;

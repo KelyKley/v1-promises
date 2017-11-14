@@ -1,9 +1,12 @@
 import store from './store';
 
-//addTodo()
-export async function addTodo (){
-    const converter = await fetch("data/eart-like-results.json");
+export async function addTodo(){
+    const converter = await fetch("data/earth-like-results.json");
+    console.log("con",converter);
+
     const converJson = await converter.json();
+    console.log("jsonn",converJson);
+
     const lista = await addList(converJson.results);
     console.log("lista",lista);
     store.setState({
